@@ -563,7 +563,7 @@ export default function Portfolio() {
                       key={index}
                       className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300"
                   >
-                    <h3 className="text-xl font-bold mb-4 text-purple-400">{t.skills[category.name.toLowerCase()]}</h3>
+                    <h3 className="text-xl font-bold mb-4 text-purple-400">{t.skills[category.name.toLowerCase() as keyof typeof t.skills]}</h3>
                     <ul className="space-y-2">
                       {category.items.map((item, i) => (
                           <li key={i} className="text-gray-300 flex items-center">
