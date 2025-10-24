@@ -323,7 +323,7 @@ export default function Portfolio() {
                             activeSection === item ? 'text-purple-400' : 'text-gray-300 hover:text-white'
                         }`}
                     >
-                      {t.nav[item]}
+                      {t.nav[item as keyof typeof t.nav]}
                     </button>
                 ))}
                 <button
