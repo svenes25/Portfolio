@@ -354,7 +354,7 @@ export default function Portfolio() {
                           onClick={() => scrollToSection(item)}
                           className="capitalize block w-full text-left px-3 py-2 text-gray-300 hover:text-white hover:bg-purple-900/50 rounded transition-colors"
                       >
-                        {t.nav[item]}
+                        {t.nav[item as keyof typeof t.nav]}
                       </button>
                   ))}
                   <button
