@@ -66,20 +66,44 @@ export default function Portfolio() {
         title: 'Professional Experience',
         items: [
           {
-            role: 'Full Stack Intern',
+            role: 'Intern',
             company: 'Bewell Technology.',
             duration: 'July 2025 - Present',
-            description: "Using React and FastAPI, I saved data coming from MQTT to a PostgreSQL database and displayed it on the panel I created with React using API requests and WebSocket." +
-                "I made improvements to this panel, including personnel management, device management, device profile management, log management, and alarm protocol." +
-                "Through my interest in SaaS solutions, I learned to use the ThingsBoard platform. I developed bridge software to display data from our device on this platform." +
-                "I developed deep learning algorithms with PyTorch. I took part in the data preprocessing and image detection tasks of image processing projects."},
+            description:'I designed and implemented a robust infrastructure between FastAPI and PostgreSQL to\n' +
+                'process data collected from IoT devices via MQTT to enable real-time data streaming and\n' +
+                'transfer it to a web-based dashboard using React.js. I developed dynamic grouping and profilebased\n' +
+                'configuration mechanisms to make sense of the data, enabling faster and more targeted\n' +
+                'data analysis. To ensure system sustainability, I created a device management module (device\n' +
+                'logging/monitoring) and a detailed log management module to increase operational efficiency. I\n' +
+                'implemented user authorization processes to maximize system security and secure access to\n' +
+                'profile-based data.\n' +
+                'To provide enterprise-level IoT data management, I quickly launched the ThingsBoard platform,\n' +
+                'an open-source SaaS solution, using Docker containerization and integrated it into production. I\n' +
+                'developed a custom bridge code in Python between the company\'s existing MQTT broker and\n' +
+                'ThingsBoard\'s internal broker, ensuring the uninterrupted and secure flow of critical data. By\n' +
+                'processing the data flowing through the broker, I created dynamic dashboards that provide\n' +
+                'real-time operational monitoring. I also designed and implemented customized alarm and\n' +
+                'notification protocols for critical situations.\n' +
+                'I performed real-time, automatic face detection and identification from video streams using the\n' +
+                'OpenCV library. I converted the detected faces into high-resolution images for further analysis.\n' +
+                'I successfully applied emotion detection (happiness, sadness, anger, etc.) to the converted face\n' +
+                'images using a CNN model trained with the TensorFlow deep learning library. This system\n' +
+                'offers applications in Parkinson\'s disease patients, enabling the quantitative analysis of\n' +
+                'emotional responses. The project successfully classified emotion states with high accuracy.',
+          },
           {
             role: 'Part - Time Backend Developer',
             company: 'Necmettin Erbakan University',
             duration: 'March 2025 - June 2025',
-            description: 'I specialized in the Laravel framework, developed a solid understanding of the MVC architecture, and gained hands-on experience with API integration. ' +
-                'I contributed to the development of a digital platform that supports over 200 university communities and students, facilitating communication, event management, and participation. ' +
-                'I contributed to the development of a digital platform that facilitates communication, event management, and participation.'},
+            description:'I actively contributed to the development of a multi-user digital management platform targeting\n' +
+                'over 200 university communities and a broad student population. I designed and implemented\n' +
+                'solutions to streamline the platform\'s core modules: event management, inter-community\n' +
+                'communication, and participant tracking. The implementation of this platform improved the flow\n' +
+                'of information and interaction between communities and students, increasing event\n' +
+                'participation rates and the efficiency of community organizations. Specifically, I played a key\n' +
+                'role in retrieving student information using the Laravel API and storing this information in\n' +
+                'MySQL, optimizing the system\'s scalability and performance.'
+          },
         ]
       },
       projects: {
@@ -185,19 +209,41 @@ export default function Portfolio() {
             role: 'Full Stack Stajyeri',
             company: 'Bewell Teknoloji',
             duration: 'Temmuz 2025 - Günümüz',
-            description: 'React ve FastAPI kullanarak MQTT üzerinden gelen verileri Postgresql veri tabanına kayıt ederek API istekleri ve WebSocet ile React ile oluşturduğum panelde görüntülenmesini sağladım.' +
-                ' Bu panelde personel yönetimi, cihaz yönetimi, cihaz profili yönetimi, log yönetimi ve alarm protokolu gibi geliştirmeler yaptım.' +
-                ' SaaS çözümleri ile ilgilenerek ThingsBoard platformunu kullanmayı öğrendim. Bizim cihazımızdan gelen verileri bu platformda görüntüleyebilmek için köprü yazılım geliştirdim.' +
-                ' PyTorch ile derin öğrenme algoritmaları geliştirdim. Görüntü işleme üzerine projelerin veri ön işleme ve görüntü tespiti görevlerinde rol aldım. '
+            description: 'Gerçek zamanlı veri akışını sağlamak amacıyla MQTT üzerinden IoT cihazlarından toplanan\n' +
+                'verilerin işlenmesi ve React.js ile web tabanlı dashboard\'a aktarılması için FastAPI ile Postgresql\n' +
+                'arasında sağlam bir altyapı tasarladım ve uyguladım. Verilerin anlamlı hale getirilmesi için\n' +
+                'dinamik gruplandırma ve profil bazlı yapılandırma mekanizmalarını geliştirdim. Bu sayede daha\n' +
+                'hızlı ve hedeflenmiş veri analizi mümkün oldu. Sistemin sürdürülebilirliğini sağlamak üzere cihaz\n' +
+                'yönetim modülü (cihaz kayıt/izleme) ve detaylı log yönetim modülü oluşturarak operasyonel\n' +
+                'verimliliği artırdım. Kullanıcı yetkilendirme süreçlerini uygulayarak sistem güvenliğini maksimize\n' +
+                'ettim ve profil bazlı verilere erişimi güvenilir hale getirdim.\n' +
+                'Kurumsal düzeyde IoT veri yönetimi sağlamak amacıyla Açık Kaynaklı SaaS çözümü olan\n' +
+                'ThingsBoard platformu Docker konteynerizasyonu ile hızla ayağa kaldırdım ve üretim ortamına\n' +
+                'entegre ettim. Firmanın mevcut MQTT Broker\'ı ile ThingsBoard\'un dahili Broker\'ı arasında\n' +
+                'Python dilinde özel bir köprü kodu geliştirilerek, kritik verilerin kesintisiz ve güvenli akışı\n' +
+                'sağladım. Broker üzerinden akan verileri işleyerek, gerçek zamanlı operasyonel izleme sağlayan\n' +
+                'dinamik dashboard\'lar oluşturdum. Kritik durumlar için özelleştirilmiş alarm ve bildirim\n' +
+                'protokolleri tasarlanıp devreye aldım.\n' +
+                'OpenCV kütüphanesini kullanarak video akışlarından gerçek zamanlı/otomatik yüz algılama ve\n' +
+                'tespiti gerçekleştirdim. Tespit edilen yüzler, daha ileri analizler için yüksek çözünürlüklü\n' +
+                'görsellere dönüştürdüm. Dönüştürülen yüz görselleri üzerinde, TensorFlow derin öğrenme\n' +
+                'kütüphanesi ile eğitilmiş CNN modeli kullanılarak duygu durumu tespiti (mutluluk, üzüntü, öfke\n' +
+                'vb.) başarıyla uyguladım. Bu sistem, Parkinson hastaları üzerinde uygulamalar sunarak, duygusal\n' +
+                'tepkilerin nicel olarak analiz edilmesini sağladım. Proje, yüksek doğruluk oranı ile duygu\n' +
+                'durumlarını başarılı bir şekilde sınıflandırdı.'
           },
           {
             role: 'Part - Time Backend Geliştirici',
             company: 'Necmettin Erbakan Üniversitesi',
             duration: 'Mart 2025 - Haziran 2025',
-            description: 'Laravel framework\'ünde uzmanlaştım, MVC mimarisi hakkında sağlam bir anlayış geliştirdim ve API entegrasyonu konusunda uygulamalı deneyim kazandım.' +
-                ' 200\'den fazla üniversite topluluğu ve öğrencisini destekleyen,\n' +
-                'iletişimi, etkinlik yönetimini ve katılımı kolaylaştıran bir dijital\n' +
-                'platform geliştirilmesine katkı sağladım.'
+            description: '200\'den fazla üniversite topluluğu ve geniş bir öğrenci kitlesini hedefleyen, çok kullanıcılı bir\n' +
+                'dijital yönetim platformunun geliştirilmesine aktif katkı sağladım. Platformun temel modülleri olan\n' +
+                'etkinlik yönetimi, topluluklar arası iletişim ve katılımcı takibi süreçlerinin kolaylaştırılmasına\n' +
+                'yönelik çözümler tasarladım ve uyguladım. Bu platformun hayata geçmesiyle, topluluklar ve\n' +
+                'öğrenciler arasındaki bilgi akışı ve etkileşim iyileştirildi. Etkinlik katılım oranlarını ve topluluk\n' +
+                'organizasyonlarının verimliliğini artırdı. Özellikle Laravel dili ile öğrenci bilgilendirme sistemine\n' +
+                'API istekleri atılarak öğrencilerin bilgileri çekilmesine ve bu bilgiler MySQL\'de kayıt altına\n' +
+                'alınmasında kilit bir rol üstlenerek sistemin ölçeklenebilirliğini ve performansını optimize ettim.'
           },
         ]
       },
@@ -299,7 +345,7 @@ export default function Portfolio() {
   const skills = [
     { name: 'Frontend', items: ['React', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'HTML/CSS'] },
     { name: 'Backend', items: ['Next.js', 'Laravel', 'PHP', 'PostgreSQL', 'FastAPI'] },
-    { name: 'ai', items: ['Torch', 'Langchain', 'APIs' ] },
+    { name: 'ai', items: ['PyTorch', 'Langchain', 'APIs' ] },
     { name: 'Tools', items: ['Git', 'Docker', 'MQTT' ] }
   ];
   return (
