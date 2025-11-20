@@ -5,7 +5,8 @@ export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState<'en' | 'tr'>('en');
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +28,7 @@ export default function Portfolio() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -89,13 +90,13 @@ export default function Portfolio() {
                 'I successfully applied emotion detection (happiness, sadness, anger, etc.) to the converted face\n' +
                 'images using a CNN model trained with the TensorFlow deep learning library. This system\n' +
                 'offers applications in Parkinson\'s disease patients, enabling the quantitative analysis of\n' +
-                'emotional responses. The project successfully classified emotion states with high accuracy.',
+                'emotional responses. The project successfully classified emotion states with high accuracy.'
           },
           {
             role: 'Part - Time Backend Developer',
             company: 'Necmettin Erbakan University',
             duration: 'March 2025 - June 2025',
-            description:'I actively contributed to the development of a multi-user digital management platform targeting\n' +
+            description: 'I actively contributed to the development of a multi-user digital management platform targeting\n' +
                 'over 200 university communities and a broad student population. I designed and implemented\n' +
                 'solutions to streamline the platform\'s core modules: event management, inter-community\n' +
                 'communication, and participant tracking. The implementation of this platform improved the flow\n' +
@@ -104,7 +105,7 @@ export default function Portfolio() {
                 'role in retrieving student information using the Laravel API and storing this information in\n' +
                 'MySQL, optimizing the system\'s scalability and performance.'
           },
-        ]
+          ]
       },
       projects: {
         title: 'Featured Projects',
@@ -345,7 +346,7 @@ export default function Portfolio() {
   const skills = [
     { name: 'Frontend', items: ['React', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'HTML/CSS'] },
     { name: 'Backend', items: ['Next.js', 'Laravel', 'PHP', 'PostgreSQL', 'FastAPI'] },
-    { name: 'ai', items: ['PyTorch', 'Langchain', 'APIs' ] },
+    { name: 'ai', items: ['Torch', 'Langchain', 'APIs' ] },
     { name: 'Tools', items: ['Git', 'Docker', 'MQTT' ] }
   ];
   return (
@@ -368,7 +369,7 @@ export default function Portfolio() {
                             activeSection === item ? 'text-purple-400' : 'text-gray-300 hover:text-white'
                         }`}
                     >
-                      {t.nav[item]}
+                      {t.nav[item as keyof typeof t.nav]}
                     </button>
                 ))}
                 <button
@@ -399,7 +400,7 @@ export default function Portfolio() {
                           onClick={() => scrollToSection(item)}
                           className="capitalize block w-full text-left px-3 py-2 text-gray-300 hover:text-white hover:bg-purple-900/50 rounded transition-colors"
                       >
-                        {t.nav[item]}
+                        {t.nav[item as keyof typeof t.nav]}
                       </button>
                   ))}
                   <button
@@ -426,17 +427,17 @@ export default function Portfolio() {
                 />
               </div>
             </div>
-                  <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-slide-up">
-                {t.hero.greeting} <span
-                    className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">{t.hero.name}</span>
-              </h1>
-              <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-slide-up animation-delay-200">
-                {t.hero.title}
-              </p>
-              <div className="flex justify-center space-x-4 animate-slide-up animation-delay-400">
-                <button
-                    onClick={() => scrollToSection('projects')}
-                    className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-slide-up">
+              {t.hero.greeting} <span
+                className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">{t.hero.name}</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-slide-up animation-delay-200">
+              {t.hero.title}
+            </p>
+            <div className="flex justify-center space-x-4 animate-slide-up animation-delay-400">
+              <button
+                  onClick={() => scrollToSection('projects')}
+                  className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
               >
                 {t.hero.viewWork}
               </button>
@@ -608,7 +609,7 @@ export default function Portfolio() {
                       key={index}
                       className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300"
                   >
-                    <h3 className="text-xl font-bold mb-4 text-purple-400">{t.skills[category.name.toLowerCase()]}</h3>
+                    <h3 className="text-xl font-bold mb-4 text-purple-400">{t.skills[category.name.toLowerCase() as keyof typeof t.skills]}</h3>
                     <ul className="space-y-2">
                       {category.items.map((item, i) => (
                           <li key={i} className="text-gray-300 flex items-center">
