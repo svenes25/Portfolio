@@ -78,14 +78,14 @@ export default function Portfolio() {
                 'logging/monitoring) and a detailed log management module to increase operational efficiency. I\n' +
                 'implemented user authorization processes to maximize system security and secure access to\n' +
                 'profile-based data.\n' +
-                'I created the app's login screen using Flutter, developed the user authentication flow. Then, I\n' +
+                'I created the app\'s login screen using Flutter, developed the user authentication flow. Then, I\n' +
                 'designed the main screen, which displays live health data from the wristband, and created\n' +
                 'custom row structures to accommodate different data types, making the interface more\n' +
                 'readable and organized. I integrated the notification page, which lists threshold values\n' +
                 'registered in the system, with the API, allowing for the most up-to-date data to be displayed.\n' +
                 'Finally, I created the profile page displaying user information and created a static structure for\n' +
                 'this page, designed for viewing only. Throughout this process, I successfully developed the\n' +
-                'mobile app's core modules by actively utilizing Flutter's widget structure, API integration, screen\n' +
+                'mobile app\'s core modules by actively utilizing Flutter\'s widget structure, API integration, screen\n' +
                 'transitions, and state management.\n' +
                 'I performed real-time, automatic face detection and identification from video streams using the\n' +
                 'OpenCV library. I converted the detected faces into high-resolution images for further analysis.\n' +
