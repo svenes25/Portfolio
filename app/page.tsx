@@ -78,13 +78,15 @@ export default function Portfolio() {
                 'logging/monitoring) and a detailed log management module to increase operational efficiency. I\n' +
                 'implemented user authorization processes to maximize system security and secure access to\n' +
                 'profile-based data.\n' +
-                'To provide enterprise-level IoT data management, I quickly launched the ThingsBoard platform,\n' +
-                'an open-source SaaS solution, using Docker containerization and integrated it into production. I\n' +
-                'developed a custom bridge code in Python between the company\'s existing MQTT broker and\n' +
-                'ThingsBoard\'s internal broker, ensuring the uninterrupted and secure flow of critical data. By\n' +
-                'processing the data flowing through the broker, I created dynamic dashboards that provide\n' +
-                'real-time operational monitoring. I also designed and implemented customized alarm and\n' +
-                'notification protocols for critical situations.\n' +
+                'I created the app's login screen using Flutter, developed the user authentication flow. Then, I\n' +
+                'designed the main screen, which displays live health data from the wristband, and created\n' +
+                'custom row structures to accommodate different data types, making the interface more\n' +
+                'readable and organized. I integrated the notification page, which lists threshold values\n' +
+                'registered in the system, with the API, allowing for the most up-to-date data to be displayed.\n' +
+                'Finally, I created the profile page displaying user information and created a static structure for\n' +
+                'this page, designed for viewing only. Throughout this process, I successfully developed the\n' +
+                'mobile app's core modules by actively utilizing Flutter's widget structure, API integration, screen\n' +
+                'transitions, and state management.\n' +
                 'I performed real-time, automatic face detection and identification from video streams using the\n' +
                 'OpenCV library. I converted the detected faces into high-resolution images for further analysis.\n' +
                 'I successfully applied emotion detection (happiness, sadness, anger, etc.) to the converted face\n' +
@@ -219,12 +221,14 @@ export default function Portfolio() {
                 'verimliliği artırdım. Kullanıcı yetkilendirme süreçlerini uygulayarak sistem güvenliğini maksimize\n' +
                 'ettim ve profil bazlı verilere erişimi güvenilir hale getirdim.\n' +
                 'Kurumsal düzeyde IoT veri yönetimi sağlamak amacıyla Açık Kaynaklı SaaS çözümü olan\n' +
-                'ThingsBoard platformu Docker konteynerizasyonu ile hızla ayağa kaldırdım ve üretim ortamına\n' +
-                'entegre ettim. Firmanın mevcut MQTT Broker\'ı ile ThingsBoard\'un dahili Broker\'ı arasında\n' +
-                'Python dilinde özel bir köprü kodu geliştirilerek, kritik verilerin kesintisiz ve güvenli akışı\n' +
-                'sağladım. Broker üzerinden akan verileri işleyerek, gerçek zamanlı operasyonel izleme sağlayan\n' +
-                'dinamik dashboard\'lar oluşturdum. Kritik durumlar için özelleştirilmiş alarm ve bildirim\n' +
-                'protokolleri tasarlanıp devreye aldım.\n' +
+                'Flutter kullanarak uygulamanın giriş ekranını oluşturdum ve kullanıcı kimlik doğrulama akışını\n' +
+                'geliştirdim. Ardından, bileklikten canlı sağlık verilerini görüntüleyen ana ekranı tasarladım ve\n' +
+                'farklı veri türlerini barındıracak özel satır yapıları oluşturarak arayüzü daha okunabilir ve düzenli\n' +
+                'hale getirdim. Sistemde kayıtlı eşik değerlerini listeleyen bildirim sayfasını API ile entegre ederek\n' +
+                'en güncel verilerin görüntülenmesini sağladım. Son olarak, kullanıcı bilgilerini görüntüleyen profil\n' +
+                'sayfasını oluşturdum ve bu sayfa için yalnızca görüntüleme amaçlı statik bir yapı oluşturdum. Bu\n' +
+                'süreç boyunca, Flutter'ın widget yapısını, API entegrasyonunu, ekran geçişlerini ve durum\n' +
+                'yönetimini aktif olarak kullanarak mobil uygulamanın temel modüllerini başarıyla geliştirdim.\n' +
                 'OpenCV kütüphanesini kullanarak video akışlarından gerçek zamanlı/otomatik yüz algılama ve\n' +
                 'tespiti gerçekleştirdim. Tespit edilen yüzler, daha ileri analizler için yüksek çözünürlüklü\n' +
                 'görsellere dönüştürdüm. Dönüştürülen yüz görselleri üzerinde, TensorFlow derin öğrenme\n' +
