@@ -227,7 +227,7 @@ export default function Portfolio() {
                 'hale getirdim. Sistemde kayıtlı eşik değerlerini listeleyen bildirim sayfasını API ile entegre ederek\n' +
                 'en güncel verilerin görüntülenmesini sağladım. Son olarak, kullanıcı bilgilerini görüntüleyen profil\n' +
                 'sayfasını oluşturdum ve bu sayfa için yalnızca görüntüleme amaçlı statik bir yapı oluşturdum. Bu\n' +
-                'süreç boyunca, Flutter'ın widget yapısını, API entegrasyonunu, ekran geçişlerini ve durum\n' +
+                'süreç boyunca, Flutter\'ın widget yapısını, API entegrasyonunu, ekran geçişlerini ve durum\n' +
                 'yönetimini aktif olarak kullanarak mobil uygulamanın temel modüllerini başarıyla geliştirdim.\n' +
                 'OpenCV kütüphanesini kullanarak video akışlarından gerçek zamanlı/otomatik yüz algılama ve\n' +
                 'tespiti gerçekleştirdim. Tespit edilen yüzler, daha ileri analizler için yüksek çözünürlüklü\n' +
